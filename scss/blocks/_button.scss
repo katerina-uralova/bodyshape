@@ -1,0 +1,21 @@
+.button {
+    display:inline-block;
+    // padding:18px 46px 15px;
+    padding:18px clamp(0.938rem, 0.256rem + 3.41vw, 2.813rem) 15px;
+    font-family: var(--font-accent);
+    font-weight: 700;
+    font-size: 19px;
+    letter-spacing: 0.26em;
+    line-height:1;
+    color: #000;
+    background-color:var(--accent-color);
+    border-radius: 7px;
+    transition:all 0.2s ease-in;
+
+    &:hover, &:active{
+        background-color:#fcc54e;
+    }
+    @include tablet{
+         letter-spacing: 0.16em;
+    }
+}

@@ -1,0 +1,48 @@
+.section__beast {  
+    height: 750px;
+    display: flex;
+    align-items: center;
+
+    background-image: url("./../img/beast/beast-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+
+    @include mediaBg() {
+        background-image: url("./../img/beast/beast-bg@2x.jpg");
+
+    }
+
+    --angel: 10%;
+    clip-path: polygon(0% var(--angel),
+        100% 0%,
+        100% calc(100% - var(--angel)),
+        0% 100%);
+
+    @include mobileL{
+        height:auto;
+        padding:100px 0;
+    }
+}
+
+.section__beast-title {
+    margin-bottom: 10px;
+    font-family: var(--font-accent);
+    font-weight: 700;
+    font-size:clamp(2.625rem, 1.875rem + 3.75vw, 4.688rem);
+    letter-spacing: 0.1em;
+    color: #fff;
+}
+
+.section__beast-desc {
+    margin-bottom: 30px;
+    font-weight: 300;
+    font-size: clamp(0.875rem, 0.693rem + 0.91vw, 1.375rem);
+    line-height: 150%;
+    color: #fff;
+
+}
+.section__beast-desc p + p{
+    margin-top: 20px;
+}
+

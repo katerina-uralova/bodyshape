@@ -1,0 +1,40 @@
+.contacts {
+    height: 860px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url("./../img/contacts/contact-form-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @include mediaBg() {
+        background-image: url("./../img/contacts/contact-form-bg@2x.jpg");
+    }
+
+    @include tablet {
+        padding: 90px 0;
+        height: auto;
+
+        background-image:
+            linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+            url("./../img/contacts/contact-form-bg.jpg");
+
+    }
+
+
+}
+
+
+.contacts__title {
+    margin-bottom: 40px;
+
+    font-family: var(--font-accent);
+    font-weight: 700;
+    font-size: clamp(2.5rem, 1.818rem + 3.41vw, 4.375rem);
+    letter-spacing: 0.06em;
+    color: #ffd479;
+
+}

@@ -1,0 +1,30 @@
+.card__group {
+    display:inline-block;
+}
+
+.card__group-img {
+    margin-bottom: 25px;
+
+    border-radius: 20px;
+    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card__group-title {
+    font-family: var(--font-accent);
+    font-weight: 700;
+    font-size: 43px;
+    letter-spacing: 0.07em;
+    color: var(--accent-color);
+
+    @include iPad{
+      font-size: 36px;  
+    }
+
+    @include tablet{
+        font-size:26px;
+    }
+    
+    @include mobileM{
+        text-align:center;
+    }
+}

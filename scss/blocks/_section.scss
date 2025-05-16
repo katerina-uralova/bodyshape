@@ -1,0 +1,90 @@
+.section {
+    padding: 150px 0;
+
+    @include tablet {
+        padding: 100px 0;
+    }
+
+    @include mobileL {
+        padding: 80px 0;
+    }
+}
+
+
+.section__header {
+    padding-bottom: 50px;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+
+    @include mobileL {
+        padding-bottom: 30px;
+    }
+}
+
+.section__header-groups {
+    max-width: 500px;
+}
+
+.section__title {
+    font-family: var(--font-accent);
+    font-weight: 700;
+    color: var(--accent-color);
+    font-size: clamp(3rem, 1.909rem + 5.45vw, 6rem);
+    letter-spacing: 0.08em;
+}
+
+.section__text {
+
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 200%;
+    text-align: center;
+    color: #fafaf5;
+
+    @include mobileL {
+        font-size: 14px;
+    }
+}
+
+.section__trainers-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 35px 30px;
+
+    @include tablet {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include mobileL {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+// Section-Groups
+.section__groups-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 105px 32px;
+
+    @include iPad {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 80px 32px;
+    }
+
+    @include tablet {
+        gap: 60px 32px;
+    }
+
+    @include mobileL {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 60px 20px;
+    }
+
+    @include mobileM {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+}

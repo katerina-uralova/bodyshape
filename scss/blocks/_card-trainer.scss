@@ -1,0 +1,63 @@
+.card__trainer {
+    display: block;
+    position: relative;
+
+    max-width: 268px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.2);
+
+    &::before {
+        opacity: 0;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 100%);
+        transition: all 0.2s ease-in;
+    }
+    @include mobileL{
+        border-radius:10px;
+    }
+}
+
+.card__trainer-name {
+    opacity: 0;
+    position: absolute;
+
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-weight: 700;
+    font-size: 42px;
+    text-align: center;
+    color: #fff;
+
+    transition: all 0.2s ease-in;
+    @include tablet{
+           font-size: 32px;
+    }
+}
+
+.card__trainer:hover .card__trainer-name {
+    opacity: 1;
+    top: 50%;
+}
+
+// .card__trainer-img {
+// }
+.card__trainer:hover::before {
+    opacity: 1;
+}
+@media (hover: none) and (pointer: coarse){
+    .card__trainer-name{
+        opacity:1;
+        top:50%;
+    }
+    .card__trainer::before{
+        opacity:1;
+    }
+}
