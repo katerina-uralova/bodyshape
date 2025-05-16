@@ -1,4 +1,4 @@
-Technologies Used 
+### 🛠️ Technologies Used 
 
 HTML5 – Semantic and structured markup
 
@@ -11,7 +11,7 @@ Figma (optional mention if design was made separately) – UI/UX design prototyp
 Git & GitHub Pages – Version control and deployment
 
 
-Responsive Design 
+### 📱 Responsive Design 
 
 The site is fully responsive and works on desktop, tablet, and mobile devices using media queries and mobile-first SCSS structure.
 
